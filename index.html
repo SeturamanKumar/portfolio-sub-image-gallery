@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body{
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: #f0f0f0;
+        }
+        .gallery{
+            display: inline-block;
+            border: 2px solid rgba(128, 128, 128, 0.587);
+            margin: 15px;
+            width: 350px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: trnasform 0.2s ease, border 0.2s ease;
+        }
+        .gallery:hover{
+            border: 2px solid rgba(255, 0, 0, 0.616);
+            transform: scale(1.03);
+        }
+        .gallery img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery .description{
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <a href="https://placehold.co/800x600/a2d2ff/ffffff?text=First+Image" target="_blank">
+            <img src="https://placehold.co/800x600/a2d2ff/ffffff?text=First+Image" alt="first" width="350">
+        </a>
+        <div class="description">First Image</div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://placehold.co/800x600/bde0fe/ffffff?text=Second+Image" target="_blank">
+            <img src="https://placehold.co/800x600/bde0fe/ffffff?text=Second+Image" alt="second" width="350">
+        </a>
+        <div class="description">Second Image</div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://placehold.co/800x600/ffafcc/ffffff?text=Third+Image" target="_blank">
+            <img src="https://placehold.co/800x600/ffafcc/ffffff?text=Third+Image" alt="Third" width="350">
+        </a>
+        <div class="description">Third Image</div>
+    </div>
+    
+</body>
+</html>
